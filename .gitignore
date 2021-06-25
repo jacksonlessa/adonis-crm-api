@@ -1,0 +1,11 @@
+## Adonis default
+node_modules
+build
+coverage
+.vscode
+.DS_STORE
+.env
+tmp
+
+## 
+data
