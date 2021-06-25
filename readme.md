@@ -1,0 +1,1 @@
+docker-compose exec docker-adonis-api node ace migration:run
