@@ -6,7 +6,11 @@ export default class Users extends BaseSchema {
   public async up() {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id').primary()
-      table.string('account_id').index()
+      table
+        .integer('account_id')
+        .unsigned()
+        .references('accounts.id')
+        .onDelete('CASCADE') 
       table.string('role', 25).index()
       table.string('email').unique().notNullable()
       table.string('password').notNullable()
