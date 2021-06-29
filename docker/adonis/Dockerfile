@@ -10,4 +10,4 @@ RUN npm install
 # Let all incoming connections use the port below
 EXPOSE 1379
 
-CMD node ace serve
+CMD node ace serve --w
